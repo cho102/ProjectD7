@@ -3,7 +3,6 @@ package edu.ucr.cs.cs167.cho102
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
-import org.apache.spark.SparkConf
 
 object App {
   def main(args : Array[String]) {
@@ -49,7 +48,7 @@ object App {
 
       //Collect the result in an array of keywords
       val keywords = result.select("col").collect.map(f=>f.getString(0))
-      //print(keywords.toList)
+      println(keywords.toList)
     } finally {
       spark.stop
     }
