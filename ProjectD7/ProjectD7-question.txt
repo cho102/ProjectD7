@@ -1,0 +1,4 @@
+﻿What is the total number of records in the tweets_topic dataset for the 10k dataset?
+269
+20
+289
